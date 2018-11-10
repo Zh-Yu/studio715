@@ -10,9 +10,6 @@
     <div class="content">
       Future, reloaded.  Contemporary and memory, sartorial craftsmanship and augmented reality, public and private: antithetical realities are organically overlapping in Club Unseen, the new project created for the 2018 Salone del Mobile.
     </div>
-    <div class="content">
-      Our philosophy is based on a conceptual approach inspired by the unexpected, and on an extensive iconographic and visionary background, generating results that are unique of their kind. Our attention to details, and the emotion they can generate in people, is fundamental in our projects.
-    </div>
   </div>
 </template>
 
@@ -30,11 +27,12 @@
 <style scoped>
 .home{
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 .content{
-  margin: 60px auto 0;
+  margin: 50px auto 0;
   width: 60%;
   text-align: center;
+  font-size: 14px;
 }
 </style>

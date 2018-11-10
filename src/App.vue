@@ -60,10 +60,14 @@
   font-weight: bold;
   color: rgba(26,26,26,.4);
 }
+.link:hover{
+  color: black;
+}
 .bottomLine{
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .bottom{
   margin-top: 50px;
+  font-size: 12px;
 }
 </style>
