@@ -45,13 +45,14 @@
 }
 
 .topLine, .bottomLine{
-  width: 80%;
+  width: 70%;
   margin-top: 50px;
   color:rgba(0,0,0,.15); 
   border-style: none;
   border-width: 0;
   height: 1px;
   background-color: rgba(0,0,0,.15);
+  min-width: 270px;
 }
 
 .link{

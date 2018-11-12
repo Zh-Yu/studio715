@@ -26,7 +26,7 @@
 </script>
 <style scoped>
 .home{
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 .carousel{
@@ -38,7 +38,7 @@
 }
 .content{
   margin: 50px auto 0;
-  width: 60%;
+  width: 80%;
   text-align: center;
   font-size: 14px;
 }
