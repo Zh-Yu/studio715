@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import VueCarousel from 'vue-carousel';
-import 'element-ui/lib/theme-chalk/index.css';
 import { Carousel, CarouselItem } from 'element-ui';
+import 'element-ui/lib/theme-chalk/carousel.css';
+import 'element-ui/lib/theme-chalk/carousel-item.css';
+
 
 Vue.config.productionTip = false
 
-Vue.use(VueCarousel)
 Vue.use(Carousel)
 Vue.use(CarouselItem)
 

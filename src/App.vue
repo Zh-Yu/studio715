@@ -50,7 +50,7 @@
   color:rgba(0,0,0,.15); 
   border-style: none;
   border-width: 0;
-  height: 1px;
+  height: 2px;
   background-color: rgba(0,0,0,.15);
 }
 
