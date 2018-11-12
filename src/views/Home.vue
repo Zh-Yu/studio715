@@ -1,11 +1,16 @@
 <template>
   <div class="home">
-    <div>
-      <carousel :scrollPerPage="true" autoplay :perPage="1" :paginationEnabled="false">
+    <div class="carousel">
+      <!-- <carousel :scrollPerPage="true" autoplay :perPage="1" :paginationEnabled="false">
         <slide v-for="item in imgArray" :key="item">
           <img :src="item"/>
         </slide>
-      </carousel>
+      </carousel> -->
+      <el-carousel :interval="1000" indicator-position="none" height="150px">
+        <el-carousel-item v-for="item in 4" :key="item">
+          <h3>{{ item }}</h3>
+        </el-carousel-item>
+      </el-carousel>
     </div>
     <div class="content">
       Future, reloaded.  Contemporary and memory, sartorial craftsmanship and augmented reality, public and private: antithetical realities are organically overlapping in Club Unseen, the new project created for the 2018 Salone del Mobile.
@@ -29,10 +34,37 @@
   width: 80%;
   margin: 20px auto 0;
 }
+.carousel{
+  height: 150px;
+  width: 100%;
+}
+.el-carousel__item{
+  width: 100%;
+}
 .content{
   margin: 50px auto 0;
   width: 60%;
   text-align: center;
   font-size: 14px;
 }
+ .el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 150px;
+    margin: 0;
+  }
+  .el-carousel__item{
+    display: inline-block;
+  }
+   .el-carousel__item:nth-child(2n) {
+     background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+     background-color: #d3dce6;
+  }
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
 </style>
