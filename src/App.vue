@@ -16,7 +16,7 @@
 
 <style>
 .logo{
-  margin: 0 auto 50px;
+  margin: 0 auto 42px;
   display: block;
   width: 200px;
 
@@ -29,7 +29,7 @@
   color: #2c3e50;
 }
 #nav {
-  padding: 30px;
+  padding: 30px 30px 50px 30px;
   animation-name: titleEasing;
   animation-duration: 1s;
 }
@@ -50,7 +50,7 @@
   color:rgba(0,0,0,.15); 
   border-style: none;
   border-width: 0;
-  height: 2px;
+  height: 1px;
   background-color: rgba(0,0,0,.15);
 }
 
