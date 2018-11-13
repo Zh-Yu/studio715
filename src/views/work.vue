@@ -22,7 +22,7 @@ export default {
 }
 .project{
   width: 46%;
-  min-width: 268px;
+  min-width: 270px;
   margin-bottom: 20px;
 }
 

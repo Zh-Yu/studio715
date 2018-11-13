@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <img src="./assets/logo.jpg" class="logo">
+      <img src="./assets/logo.jpg" class="logo" @click="toHome">
       <router-link to="/about" class="link">about</router-link> |
       <router-link to="/work" class="link">work</router-link> |
       <router-link to="/contact" class="link">contact</router-link>
@@ -13,6 +13,16 @@
     Copyright © 2006-2018 Studiopepe. All rights reserved.</div>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    toHome () {
+      this.$router.push('/')
+    }
+  }
+}
+</script>
+
 
 <style>
 .logo{
@@ -41,7 +51,7 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: black;
 }
 
 .topLine, .bottomLine{
@@ -58,8 +68,10 @@
 .link{
   padding: 0 10px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: "adobe-caslon-pro";
   color: rgba(26,26,26,.4);
+  font-size: 20px;
 }
 .link:hover{
   color: black;

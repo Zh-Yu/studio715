@@ -116,6 +116,7 @@ export default {
 .creative_consultancy, .what_we_offer{
   width: 42%;
   margin: 0 auto;
+  min-width: 270px;
   .title{
     margin-top: 0;
   }
@@ -136,7 +137,7 @@ export default {
   .photo{
     float: left;
     width: 30%;
-    min-width: 278px;
+    min-width: 250px;
     margin-right: 20px;
     img{
       width: 100%;
