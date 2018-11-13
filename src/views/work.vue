@@ -1,6 +1,6 @@
 <template>
   <div class="work">
-    <div class="project" v-for="item in 10">
+    <div class="project" v-for="(item, index) in 10" @click="toProject(index)">
       <img class="img" src="https://static1.squarespace.com/static/54ec963fe4b0dc5d50429d16/54edb596e4b035a09db262b0/5bc98efeeef1a1a7f494ea12/1539936026493/SPECIAL+PROJECTS.jpg?format=750w">
       <div class="name">RETAIL</div>
     </div>
@@ -8,7 +8,11 @@
 </template>
 <script>
 export default {
-  
+  methods : {
+    toProject (index) {
+      this.$router.push('/project?index=' + index)
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
