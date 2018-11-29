@@ -5,8 +5,8 @@
       <router-link to="/about" class="link">about</router-link> |
       <router-link to="/work" class="link">work</router-link> |
       <router-link to="/contact" class="link">contact</router-link>
-      <hr class="topLine" />
     </div>
+    <hr class="topLine" />
     <router-view/>
     <hr class="bottomLine" />
     <div class="bottom">Arianna Lelli Mami & Chiara Di Pinto<br/>
@@ -56,13 +56,19 @@ export default {
 
 .topLine, .bottomLine{
   width: 70%;
-  margin-top: 50px;
   color:rgba(0,0,0,.15); 
   border-style: none;
   border-width: 0;
   height: 1px;
   background-color: rgba(0,0,0,.15);
   min-width: 270px;
+  margin: 0 auto;
+}
+.topLine{
+  margin-bottom: 50px;
+}
+.bottomLine{
+  margin-top: 50px;
 }
 
 .link{

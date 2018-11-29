@@ -1,7 +1,8 @@
 <template>
+<div class="project">
   <div class="project_detail">
-    <img class="activeImg" :src="activeImg">
-    <div class="carouseContainer">
+    <img class="activeImg" :src="activeImg" v-show="activeImg">
+    <div class="carouselContainer">
       <div class="leftBtn" @click="pre">
         <img src="../assets/left.png">
       </div>
@@ -18,6 +19,23 @@
       </div>
     </div>
   </div>
+  <hr class="bottomLine" style="width: 100%;"/>
+  <div class="desc">
+    <div>
+      Alysi opens its first boutique in Milan in the historic Brera district. The store is located in a XVII century building. 
+      The store’s interior creates a sophisticated and contemporary atmosphere with a palette of half-tones and natural tints, which enhance
+      the reading of the collection without overwhelming it. The boutique is conceived as a sequence of spaces, each with an
+      individual character and distinguished by combinations of materials and colours that accompany the client
+      along a chromatic and perspective path.
+      </div>
+    <div>
+      LOCATION: via Ponte Vetero, 6 | Milan<br/>
+      YEAR: 2018<br/>
+      PHOTOGRAPHY: Silvia Rivoltella
+    </div>
+  </div>
+</div>
+  
 </template>
 <script>
 export default {
@@ -53,12 +71,12 @@ export default {
       let imgsWidth = this.$refs.imgs.offsetWidth // container的宽度
       let scrollLeft = this.$refs.imgs.scrollLeft // 向左滚动的宽度-随时变
       if (direction == 'left') {
-        if (imgLeft + imgWidth >= imgsWidth) { //左边图片的和 + 当前图片的和 >= 容器宽度应该向左滑
+        if (imgLeft + imgWidth >= imgsWidth) { //左边图片的和 + 当前图片宽度 >= 容器宽度   应该向左滑
           this.$refs.imgs.scrollLeft = scrollLeft + imgWidth
         }
       }
       if (direction == 'right') {
-        if (scrollLeft + imgsWidth > imgLeft) { // 左滑的距离 + 容器宽度 > 左边图片的宽度和
+        if (scrollLeft - imgLeft >= 0) { // 左滑的距离 - 左边图片的宽度和 < 当前图片宽度 应该向右滑
           this.$refs.imgs.scrollLeft = scrollLeft - imgWidth
         }
       }
@@ -82,63 +100,99 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.project_detail {
-  width: 65%;
-  margin: 0 auto;
-  min-width: 270px;
+@media screen and (max-width: 414px) {
   .activeImg {
-    height: 510px;
-    max-width: 100%;
+    height: 300px !important;
   }
-  .carouseContainer {
-    position: relative;
-    width: 100%;
-    height: 140px;
-    margin-top: 25px;
-    .leftBtn, .rightBtn {
-      position: absolute;
-      top: 50%;
-      width: 20px;
-      height: 20px;
-      z-index: 99;
-      img{
-        width: 100%;
-        height: 100%;
-      }
+}
+.project{
+  width: 70%;
+  min-width: 270px;
+  margin: 0 auto;
+  .project_detail {
+    width: 95%;
+    margin: 0 auto;
+    @keyframes activeCss {
+      0% {opacity: 0;}
+      40% {opacity: 0.5;}
+      100% {opacity: 1;}
     }
-    .leftBtn {
-      left: 10px;
+    .activeImg {
+      height: 510px;
+      max-width: 100%;
+      animation-name: activeCss;
+      animation-duration: 0.5s;
     }
-    .rightBtn {
-      right: 10px;
-    }
-    .imgs {
+    .carouselContainer {
+      position: relative;
       width: 100%;
-      height: 160px;
-      display: flex;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      img {
-        height: 100%;
-        margin-right: 2px;
-        flex-shrink: 0;
-        position: relative;
-        display: inline-block;
-        height: 140px;
-        opacity: 0.5;
+      height: 140px;
+      margin-top: 25px;
+      .leftBtn, .rightBtn {
+        position: absolute;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        z-index: 99;
+        img{
+          width: 100%;
+          height: 100%;
+        }
       }
-      img:nth-last-child(1) {
-        margin-right: 0;
+      .leftBtn {
+        left: 10px;
       }
-      .activeItem {
-        opacity: 1;
+      .rightBtn {
+        right: 10px;
+      }
+      .imgs {
+        width: 100%;
+        height: 160px;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        img {
+          height: 100%;
+          margin-right: 2px;
+          flex-shrink: 0;
+          position: relative;
+          display: inline-block;
+          height: 140px;
+          opacity: 0.5;
+        }
+        img:nth-last-child(1) {
+          margin-right: 0;
+        }
+        .activeItem {
+          opacity: 1;
+        }
+      }
+      .imgs::-webkit-scrollbar {
+        width: 0 !important;
+      }
+      .imgs {
+        -ms-overflow-style: none
       }
     }
-    .imgs::-webkit-scrollbar {
-      width: 0 !important;
+    .bottomLine{
+      margin: 50px 0;
+      color:rgba(0,0,0,.15); 
+      border-style: none;
+      border-width: 0;
+      height: 1px;
+      background-color: rgba(0,0,0,.15);
+      min-width: 270px;
     }
-    .imgs {
-      -ms-overflow-style: none
+  }
+  .desc{
+    margin-top: 50px;
+    div{
+      display: inline-block;
+      width: 50%;
+      padding:17px;
+      box-sizing: border-box;
+      vertical-align: top;
+      min-width: 270px;
     }
   }
 }
