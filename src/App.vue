@@ -11,8 +11,11 @@
     <hr class="topLine" />
     <router-view/>
     <hr class="bottomLine" />
-    <div class="bottom">STUDIO 715<br/>
-    Copyright © 2014-2018 Studio715. All rights reserved.</div>
+    <div class="bottom">
+      STUDIO 715
+      <br/>
+      Copyright © 2014-2019 Studio715. All rights reserved.
+    </div>
   </div>
 </template>
 <script>
@@ -27,10 +30,19 @@ export default {
 
 
 <style>
-/* @font-face {
-  font-family: Avenir Next;
-  src: url('./assets/Avenir Next.ttc');
-} */
+@font-face {
+  font-family: "FuturaLTBold";
+  src: url('./assets/FuturaLTBold.ttf');
+}
+@font-face {
+  font-family: "FuturaLTBook";
+  src: url('./assets/FuturaLTBook.ttf');
+}
+
+* {
+  font-family: 
+}
+
 .logo{
   margin: 0 auto 55px;
   display: block;
@@ -99,7 +111,10 @@ export default {
   margin-top: 40px;
 }
 .bottom{
+  font-family: "FuturaLTBook";
   margin-top: 40px;
   font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 1px;
 }
 </style>

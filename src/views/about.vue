@@ -168,7 +168,7 @@ export default {
         height: 12px;
       }
       .desc{
-        font-size: 10px;
+        font-size: 11px;
         line-height: 18px;
         text-align: justify;
       }
