@@ -8,18 +8,21 @@
       </el-carousel>
     </div>
     <div class="content">
-      Future, reloaded.  Contemporary and memory, sartorial craftsmanship and augmented reality, public and private: antithetical realities are organically overlapping in Club Unseen, the new project created for the 2018 Salone del Mobile.
+      在任何空间背景下，我们都渴望追求一种不落俗套的艺术氛围，在功能和美之间找到一种共存融洽的平衡。<br/>
+      我们的设计注重细节，关注人的感受。<br/>
+      我们的设计不是孤立的，而是创造一种人和事物的独特链接。<br/>
     </div>
   </div>
 </template>
 
 <script>
+import img1 from '../assets/main_img1.png'
+import img2 from '../assets/main_img2.png'
+import img3 from '../assets/main_img3.png'
   export default {
     data () {
       return {
-        imgArray: ['http://c.hiphotos.baidu.com/image/pic/item/ac6eddc451da81cb63f7c4a15f66d0160924314c.jpg',
-        'http://f.hiphotos.baidu.com/image/pic/item/1f178a82b9014a9043b931d1a4773912b21beed3.jpg',
-        'http://e.hiphotos.baidu.com/image/pic/item/6159252dd42a2834e087716756b5c9ea15cebfbd.jpg']
+        imgArray: [img1, img2, img3]
       }
     }
   }
@@ -30,16 +33,24 @@
   margin: 0 auto;
 }
 .carousel{
-  height: 300px;
   width: 100%;
 }
 .el-carousel__item{
-  width: 100%;
+  height: 100%;
+}
+img{
+  height: 100%;
 }
 .content{
-  margin: 50px auto 0;
+  margin: 40px auto 0;
   width: 80%;
   text-align: center;
-  font-size: 14px;
+  font-size: 11px;
+}
+</style>
+<style>
+.el-carousel__container{
+  height: 398px !important;
+  
 }
 </style>

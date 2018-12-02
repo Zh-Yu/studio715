@@ -2,15 +2,17 @@
   <div id="app">
     <div id="nav">
       <img src="./assets/logo.jpg" class="logo" @click="toHome">
-      <router-link to="/about" class="link">about</router-link> |
-      <router-link to="/work" class="link">work</router-link> |
-      <router-link to="/contact" class="link">contact</router-link>
+      <div class="router">
+        <router-link to="/about" class="link">about</router-link>|
+        <router-link to="/work" class="link"> work</router-link>|
+        <router-link to="/contact" class="link">contact</router-link>
+      </div>
     </div>
     <hr class="topLine" />
     <router-view/>
     <hr class="bottomLine" />
-    <div class="bottom">Arianna Lelli Mami & Chiara Di Pinto<br/>
-    Copyright © 2006-2018 Studiopepe. All rights reserved.</div>
+    <div class="bottom">STUDIO 715<br/>
+    Copyright © 2014-2018 Studio715. All rights reserved.</div>
   </div>
 </template>
 <script>
@@ -25,11 +27,14 @@ export default {
 
 
 <style>
+/* @font-face {
+  font-family: Avenir Next;
+  src: url('./assets/Avenir Next.ttc');
+} */
 .logo{
-  margin: 0 auto 42px;
+  margin: 0 auto 55px;
   display: block;
   width: 200px;
-
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -39,9 +44,11 @@ export default {
   color: #2c3e50;
 }
 #nav {
-  padding: 30px 30px 50px 30px;
+  padding: 30px 30px 40px 30px;
   animation-name: titleEasing;
   animation-duration: 1s;
+  color: rgba(26,26,26,.4);
+  font-size: 0;
 }
 
 @keyframes titleEasing {
@@ -65,28 +72,34 @@ export default {
   margin: 0 auto;
 }
 .topLine{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .bottomLine{
-  margin-top: 50px;
+  margin-top: 40px;
 }
-
+.router{
+  font-size: 14px;
+  height: 14px;
+}
 .link{
-  padding: 0 10px;
+  padding: 0 30px;
   text-decoration: none;
   font-weight: normal;
   font-family: "adobe-caslon-pro";
   color: rgba(26,26,26,.4);
-  font-size: 20px;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  display: inline-block;
 }
 .link:hover{
   color: black;
 }
 .bottomLine{
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .bottom{
-  margin-top: 50px;
-  font-size: 12px;
+  margin-top: 40px;
+  font-size: 10px;
 }
 </style>
