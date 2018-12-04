@@ -39,9 +39,6 @@ export default {
   src: url('./assets/FuturaLTBook.ttf');
 }
 
-* {
-  font-family: 
-}
 
 .logo{
   margin: 0 auto 55px;
@@ -87,6 +84,7 @@ export default {
   margin-bottom: 40px;
 }
 .bottomLine{
+  margin-bottom: 40px;
   margin-top: 40px;
 }
 .router{
@@ -107,14 +105,17 @@ export default {
 .link:hover{
   color: black;
 }
-.bottomLine{
-  margin-top: 40px;
-}
 .bottom{
   font-family: "FuturaLTBook";
-  margin-top: 40px;
   font-size: 10px;
   line-height: 18px;
-  letter-spacing: 1px;
+  letter-spacing: 1px; 
+  /* chrome浏览器默认中文最小12px */
+  -webkit-transform : scale(0.84,0.84);
+}
+@media only screen and (max-width: 414px) {
+  .link{
+    padding: 0 20px;
+  }
 }
 </style>

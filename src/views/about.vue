@@ -105,21 +105,9 @@ export default {
     min-width: 270px;
   }
 }
-.creative_consultancy{
-  width: 600px;
+.creative_consultancy, .what_we_offer, .who_we_are, .clients{
+  max-width: 600px;
   margin: 0 auto;
-  min-width: 270px;
-  .content{
-    font-family: "adobe-caslon-pro";
-    text-align: left;
-    font-size: 11px;
-    line-height: 18px;
-  }
-  .content:nth-last-child(1){
-    margin-top: 23px;
-  }
-}
-.what_we_offer, .who_we_are, .clients{
   .title_English{
     font-size: 14px;
     margin-bottom: 40px;
@@ -134,23 +122,29 @@ export default {
     height: 14px;
   }
 }
+.creative_consultancy{
+  .content{
+    font-family: "adobe-caslon-pro";
+    text-align: left;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .content:nth-last-child(1){
+    margin-top: 23px;
+  }
+}
+
 .what_we_offer{
   .content{
-    margin: 0 auto;
-    width: 600px;
-    min-width: 270px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-size: 11px;
+    font-size: 12px;
   }
 }
   
 .who_we_are{
-  margin: 0 auto;
   .person_desc {
-    width: 600px;
-    margin: 0 auto;
     margin-bottom: 40px;
     .person{
       .photo{
@@ -160,19 +154,18 @@ export default {
       }
       .name{
         float: right;
-        width: 443px;
+        max-width: 443px;
         font-size: 12px;
+        .english_name{
+          margin: 6px 0 23px 0;
+          height: 12px;
+        }
+        .desc{
+          font-size: 12px;
+          line-height: 18px;
+          text-align: justify;
+        }
       }
-      .english_name{
-        margin: 6px 0 23px 0;
-        height: 12px;
-      }
-      .desc{
-        font-size: 11px;
-        line-height: 18px;
-        text-align: justify;
-      }
-
       .clearfix {
         clear: both;
       }
@@ -182,20 +175,39 @@ export default {
   
 }
 .clients{
-    width: 600px;
-    margin: 0 auto;
-    .content{
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: -20px;
-      
-      .clients_logo {
-        display: block;
-        width: 120px;
-        height: 90px;
-      }
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    .clients_logo {
+      display: block;
+      width: 120px;
+      height: 90px;
     }
   }
+}
 
+@media only screen and (max-width: 414px) {
+    .creative_consultancy, .what_we_offer, .who_we_are, .clients{
+      width: 270px;
+      .person{
+        .photo{
+          float: none !important;
+        }
+      }
+    }
+    .clients{
+      width: 240px;
+    }
+    .what_we_offer{
+      .content{
+        justify-content: space-around;
+        .item{
+          margin: 5px 0;
+        }
+      }
+     
+    }
+}
   
 </style>

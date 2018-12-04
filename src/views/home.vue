@@ -29,28 +29,33 @@ import img3 from '../assets/main_img3.png'
 </script>
 <style scoped>
 .home{
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
-}
-.carousel{
-  width: 100%;
+  min-width: 270px;
 }
 .el-carousel__item{
-  height: 100%;
+  width: 100%;
 }
 img{
-  height: 100%;
+  width: 100%;
 }
 .content{
   margin: 40px auto 0;
-  width: 80%;
   text-align: center;
   font-size: 11px;
+  width: 100%;
 }
+
 </style>
 <style>
 .el-carousel__container{
-  height: 398px !important;
-  
+  margin: 0 auto;
+  width: 600px !important;
+}
+@media only screen and (max-width: 414px) {
+  .el-carousel__container{
+    width: 270px !important;
+    height: 179px !important;
+  }
 }
 </style>

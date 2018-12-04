@@ -63,11 +63,12 @@ export default {
 }
 .project{
   display: inline-block;
-  width: 46%;
+  width: 48%;
   min-width: 270px;
   margin-bottom: 20px;
   margin: 0 15px 15px 0;
   position: relative;
+  box-sizing: border-box;
   img{
     opacity: 0.5;
     width: 100%;
@@ -92,6 +93,9 @@ export default {
       height: 18px;
     }
   }
+}
+.project:nth-last-child(1), .project:nth-last-child(2){
+  margin-bottom: 0
 }
 
 .project:hover{
