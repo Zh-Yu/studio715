@@ -53,6 +53,7 @@ export default {
       line-height: 18px;
       span:nth-child(1){
         // 字体
+        font-family: AvenirNext-Bold;
       }
       span:nth-child(2){
         // 字体

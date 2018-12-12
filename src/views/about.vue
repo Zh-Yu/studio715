@@ -64,7 +64,7 @@
     <div class="clients">
       <div class="title">
         <span class="title_English">Clients</span>
-        <span class="title_Chinese">合作品牌</span>
+        <span class="title_Chinese">主要客户</span>
       </div>
       <div class="content">
         <img class="clients_logo" src="../assets/logo/1.jpg" alt="">
@@ -124,7 +124,6 @@ export default {
 }
 .creative_consultancy{
   .content{
-    font-family: "adobe-caslon-pro";
     text-align: left;
     font-size: 12px;
     line-height: 18px;

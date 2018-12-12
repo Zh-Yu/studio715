@@ -51,6 +51,7 @@ img{
 .el-carousel__container{
   margin: 0 auto;
   width: 600px !important;
+  height: 398px !important;
 }
 @media only screen and (max-width: 414px) {
   .el-carousel__container{

@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <img src="./assets/logo.jpg" class="logo" @click="toHome">
+      <img src="./assets/logo.png" class="logo" @click="toHome">
       <div class="router">
-        <router-link to="/about" class="link">about</router-link>|
-        <router-link to="/work" class="link"> work</router-link>|
-        <router-link to="/contact" class="link">contact</router-link>
+        <router-link to="/about" class="link">About</router-link>|
+        <router-link to="/work" class="link">Work</router-link>|
+        <router-link to="/contact" class="link">Contact</router-link>
       </div>
     </div>
     <hr class="topLine" />
@@ -38,6 +38,14 @@ export default {
   font-family: "FuturaLTBook";
   src: url('./assets/FuturaLTBook.ttf');
 }
+@font-face {
+  font-family: "FuturaLTBoldOblique";
+  src: url('./assets/FuturaLTBoldOblique.ttf');
+}
+@font-face {
+  font-family: "FuturaLTBookOblique";
+  src: url('./assets/FuturaLTBookOblique.ttf');
+}
 
 
 .logo{
@@ -46,7 +54,7 @@ export default {
   width: 200px;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, STFangsong, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -95,12 +103,12 @@ export default {
   padding: 0 30px;
   text-decoration: none;
   font-weight: normal;
-  font-family: "adobe-caslon-pro";
   color: rgba(26,26,26,.4);
   font-size: 14px;
   height: 14px;
   line-height: 14px;
   display: inline-block;
+  font-family: AvenirNext-Medium;
 }
 .link:hover{
   color: black;
