@@ -53,7 +53,7 @@
           <div class="name">
             <div class="chinese_name">于 晓玮</div>
             <div class="english_name">XIAOWEI YU</div>
-            <div class="desc">本科毕业于中国天津大学工业设计，期间于意大利都灵理工大学交换学习; 毕业后于米兰理工大学攻读室内设计专业硕士学位，以满分成绩毕业。在校期间设计作品“开信刀”被米兰理工大学选中参加 2014 米兰家具展卫星展。毕业后就职于意大利著名 工作室 Duccio Grassi Architects，主要从事以MaxMara、Canali为代表的奢侈品旗舰店室内设计，中东地区高档酒店和大型商业综合体，以及克罗地亚沿岸私人庄园设计，同时主持设计中国地区奢侈品品牌旗舰店形象。</div>
+            <div class="desc">本科毕业于天津大学工业设计系，期间赴意大利都灵理工大学交流学习一年，深受欧洲设计文化的熏陶和启发。之后进入米兰理工大学攻读产品设计专业，于 2014 年拿到米兰理工大学产品创新设计硕士学位。毕业后进入意大利家具界知名设计事务所 Decoma Design，参与现代家具、工业产品的设计及研发，长期与多个世界著名家具品牌如 Boffi, B&B, Poliform 等合作，针对各品牌不同风格而提供专注细节的设计，获得过多项专利和意大利设计界最高水准的 " 金罗盘 " 奖。</div>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -113,6 +113,7 @@ export default {
     margin-bottom: 40px;
     display: inline-block;
     height: 14px;
+    font-family: AvenirNext-Medium;
   }
   .title_Chinese{
     font-size: 14px;
@@ -158,6 +159,7 @@ export default {
         .english_name{
           margin: 6px 0 23px 0;
           height: 12px;
+          font-family: AvenirNext-Medium;
         }
         .desc{
           font-size: 12px;

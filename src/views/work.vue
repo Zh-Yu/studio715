@@ -85,12 +85,15 @@ export default {
       font-weight: bold;
       font-size: 18px;
       height: 18px;
+      font-family: AvenirNext-Blod;
+
     }
 
     .sub_title{
       margin-top: 14px;
       font-size: 18px;
       height: 18px;
+      font-family: AvenirNext-Medium;
     }
   }
 }

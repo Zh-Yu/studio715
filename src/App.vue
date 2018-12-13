@@ -12,9 +12,8 @@
     <router-view/>
     <hr class="bottomLine" />
     <div class="bottom">
-      STUDIO 715
-      <br/>
-      Copyright © 2014-2019 Studio715. All rights reserved.
+      <div class="studio_name">STUDIO 715</div>
+      <div class="copy_right">Copyright © 2014-2019 Studio715. All rights reserved.</div>
     </div>
   </div>
 </template>
@@ -113,13 +112,21 @@ export default {
 .link:hover{
   color: black;
 }
-.bottom{
+.bottom {
   font-family: "FuturaLTBook";
-  font-size: 10px;
+  font-size: 0;
   line-height: 18px;
   letter-spacing: 1px; 
   /* chrome浏览器默认中文最小12px */
   -webkit-transform : scale(0.84,0.84);
+ 
+}
+.studio_name{
+  font-weight: bold;
+  font-size: 10px;
+}
+.copy_right{
+  font-size: 10px;
 }
 @media only screen and (max-width: 414px) {
   .link{

@@ -211,6 +211,7 @@ export default {
       margin-left: 55px;
       width: 175px;
       text-align: center;
+      font-family: AvenirNext-Medium;
     }
   }
 }
