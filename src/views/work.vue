@@ -82,11 +82,10 @@ export default {
     top: 40%;
 
     .title{
-      font-weight: bold;
       font-size: 18px;
       height: 18px;
-      font-family: AvenirNext-Blod;
-
+      font-family: AvenirNext-Medium;
+      font-weight: bold;
     }
 
     .sub_title{

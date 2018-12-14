@@ -53,11 +53,10 @@ export default {
   width: 200px;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, STFangsong, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial,'STSong', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 #nav {
   padding: 30px 30px 40px 30px;
@@ -113,7 +112,6 @@ export default {
   color: black;
 }
 .bottom {
-  font-family: "FuturaLTBook";
   font-size: 0;
   line-height: 18px;
   letter-spacing: 1px; 
@@ -122,11 +120,13 @@ export default {
  
 }
 .studio_name{
-  font-weight: bold;
+  font-weight: 700;
   font-size: 10px;
+  font-family: "FuturaLTBold";
 }
 .copy_right{
   font-size: 10px;
+  font-family: "FuturaLTBook";
 }
 @media only screen and (max-width: 414px) {
   .link{
