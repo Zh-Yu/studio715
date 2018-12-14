@@ -53,7 +53,7 @@ export default {
   width: 200px;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial,'STSong', sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, 'SimHei', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

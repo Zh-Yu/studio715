@@ -49,6 +49,7 @@ img{
   text-align: center;
   font-size: 11px;
   width: 100%;
+  line-height: 18px;
 }
 
 </style>
