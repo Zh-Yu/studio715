@@ -74,19 +74,35 @@
         <span class="title_Chinese">主要客户</span>
       </div>
       <div class="content">
-        <img class="clients_logo" src="../assets/logo/1.jpg" alt="">
-        <img class="clients_logo" src="../assets/logo/2.jpg" alt="">
-        <img class="clients_logo" src="../assets/logo/3.jpg" alt="">
-        <img class="clients_logo" src="../assets/logo/4.jpg" alt="">
-        <img class="clients_logo" src="../assets/logo/5.jpg" alt="">
-        <img class="clients_logo" src="../assets/logo/6.jpg" alt="">
-        <img class="clients_logo" src="../assets/logo/7.jpg" alt="">
-        <img class="clients_logo" src="../assets/logo/8.jpg" alt="">
-        <img class="clients_logo" src="../assets/logo/9.jpg" alt="">
-        <img class="clients_logo" src="../assets/logo/10.jpg" alt="">
-        <img class="clients_logo" src="../assets/logo/11.jpg" alt="">
-        <img class="clients_logo" src="../assets/logo/12.jpg" alt="">
-        <img class="clients_logo" src="../assets/logo/13.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/1.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/2.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/3.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/4.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/5.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/6.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/7.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/8.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/9.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/10.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/11.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/12.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_client/13.jpg" alt="">
+      </div>
+    </div>
+    <hr class="devideLine" />
+    <div class="collaboration">
+      <div class="title">
+        <span class="title_English">Collaboration</span>
+        <span class="title_Chinese">合作品牌</span>
+      </div>
+      <div class="content">
+        <img class="brand_logo" src="../assets/logo_collaboration/1.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_collaboration/2.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_collaboration/3.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_collaboration/4.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_collaboration/5.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_collaboration/6.jpg" alt="">
+        <img class="brand_logo" src="../assets/logo_collaboration/7.jpg" alt="">
       </div>
     </div>
   </div>
@@ -112,7 +128,7 @@ export default {
     min-width: 270px;
   }
 }
-.creative_consultancy, .what_we_offer, .who_we_are, .clients{
+.creative_consultancy, .what_we_offer, .who_we_are, .clients, .collaboration{
   max-width: 600px;
   margin: 0 auto;
   .title_English{
@@ -183,12 +199,12 @@ export default {
 
   
 }
-.clients{
+.clients, .collaboration{
   .content{
     display: flex;
     flex-wrap: wrap;
     margin-top: -20px;
-    .clients_logo {
+    .brand_logo {
       display: block;
       width: 120px;
       height: 90px;
@@ -197,7 +213,7 @@ export default {
 }
 
 @media only screen and (max-width: 414px) {
-    .creative_consultancy, .what_we_offer, .who_we_are, .clients{
+    .creative_consultancy, .what_we_offer, .who_we_are, .clients, .collaboration{
       width: 270px;
       .person{
         .photo{
@@ -205,7 +221,7 @@ export default {
         }
       }
     }
-    .clients{
+    .clients, .collaboration{
       width: 240px;
     }
     .what_we_offer{
