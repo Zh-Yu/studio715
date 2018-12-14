@@ -40,7 +40,7 @@ const desc = [
       '如整面墙的折线形墙板随着人的移动而形成不同的光影效果，<br/>' +
       '具有积木形态的几何中岛，撞色的设计颇具视觉冲击力，<br/>' +
       '仿佛引领人们来到一个奇妙梦幻的游乐场。',
-    location:  'LOCATION：<span style="font-family: STFangsong; font-weight: 600">深圳中心城</span><br/>' +
+    location:  'LOCATION：<span font-weight: 600">深圳中心城</span><br/>' +
       'YEAR：2018<br/>' +
       'PHOTOGRAPHY：STUDIO 715'
   },
@@ -51,7 +51,7 @@ const desc = [
       '我们希望通过对北京办公室1700平米空间的重新思考，打造一个<br/>' +
       '极富通透感的无阻隔的交流空间，提升员工的办公体验，<br/>' +
       '同时传达公司先进的企业文化和管理理念。<br/>',
-    location: 'LOCATION： <span style="font-family: STFangsong; font-weight: 600">北京</span><br/>' +
+    location: 'LOCATION： <span font-weight: 600">北京</span><br/>' +
       'YEAR：2018 <br/>' +
       'PHOTOGRAPHY：STUDIO 715 <br/>'
   },
@@ -62,7 +62,7 @@ const desc = [
       '空间中结合了中性时尚的水泥灰与纤细优雅的复古黄铜色金属线条，<br/>' +
       '打造一个简约现代的精品形象，<br/>' +
       '凸显产品本身的手工质感以及纯正的色彩。',
-    location: 'LOCATION： <span style="font-family: STFangsong; font-weight: 600">北京合生汇</span> <br/>' +
+    location: 'LOCATION： <span font-weight: 600">北京合生汇</span> <br/>' +
       'YEAR：2018 <br/>' +
       'PHOTOGRAPHY：STUDIO 715'
   },
@@ -73,7 +73,7 @@ const desc = [
       '每个场景利用墙面层板、小沙发、地毯、边桌等软装家具<br/>' +
       '作为鞋履陈列的承载物，<br/>' +
       '色彩明快、主次分明，体现一种现代趣味的生活理念，让鞋、包等配饰在生活场景中鲜明、活泼起来。',
-    location: 'LOCATION： <span style="font-family: STFangsong; font-weight: 600">北京</span> <br/>' +
+    location: 'LOCATION： <span font-weight: 600">北京</span> <br/>' +
       'YEAR：2017 <br/>' +
       'PHOTOGRAPHY：STUDIO 715'
   },
@@ -84,7 +84,7 @@ const desc = [
     '来自意大利的Arabescato Corchia（网纹大花白）<br/>' +
     '大理石与经典的黄铜元素相结合，用清爽的石材调和时下最流行的复古金属感。<br/>' +
     '色彩简约，线条利落，体现意式设计的低调奢华。',
-    location: 'LOCATION： <span style="font-family: STFangsong; font-weight: 600">广州、苏州</span> <br/>' +
+    location: 'LOCATION： <span font-weight: 600">广州、苏州</span> <br/>' +
       'YEAR：2016 <br/>' +
       'PHOTOGRAPHY：STUDIO 715'
   }
