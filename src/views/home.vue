@@ -47,7 +47,7 @@ img{
 .content{
   margin: 40px auto 0;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   width: 100%;
   line-height: 18px;
 }
