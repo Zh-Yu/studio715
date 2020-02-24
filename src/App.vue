@@ -13,7 +13,9 @@
     <hr class="bottomLine" />
     <div class="bottom">
       <div class="studio_name">STUDIO 715</div>
-      <div class="copy_right">Copyright © 2014-2019 Studio715. All rights reserved.</div>
+      <div class="copy_right">Copyright © 2014-2020 Studio715. All rights reserved. 
+        <a href="http://www.beian.miit.gov.cn/" target="_blank" class="text">京ICP备19000918号.</a>
+      </div>
     </div>
   </div>
 </template>
@@ -127,6 +129,10 @@ export default {
 .copy_right{
   font-size: 10px;
   font-family: "FuturaLTBook";
+}
+.copy_right > a {
+  text-decoration: none;
+  color: black;
 }
 @media only screen and (max-width: 414px) {
   .link{
