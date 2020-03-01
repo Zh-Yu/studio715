@@ -29,7 +29,7 @@
 </div>
 </template>
 <script>
-const imgNumber = [13, 18, 13, 8, 15]
+const imgNumber = [13, 18, 13, 8, 15, 13, 8, 11, 9]
 const desc = [
   {
     description: 'STUDIO 715设计工作室为ILOVEPRETTY设计了全新的店铺空间，<br/>' +
@@ -87,7 +87,67 @@ const desc = [
     location: 'LOCATION： <span font-weight: 600">广州、苏州</span> <br/>' +
       'YEAR：2016 <br/>' +
       'PHOTOGRAPHY：STUDIO 715'
-  }
+  },
+  {
+    description:'STUDIO 715为ThoughtWorks思特沃克·武汉设计了崭新的办公空间。 <br/>' +
+    '不同于传统的办公空间，<br/>' +
+    '我们在办公室中创造了一个又一个“交汇点”——In-between Space。<br/>' +
+    '通过地面材质色彩的变化，这些交汇点一方面为斯特沃克的员工提供非正式的讨论、会议环境，<br/>' +
+    '另一方面也担任了衔接各个不同功能空间的角色。<br/>' +
+    '开放办公区的办公桌的摆放呈Z字形，制造更多的交汇点和路线，<br/>' +
+    '，在办公室活动中增加人与人之间相遇的几率，<br/>' +
+    '给枯燥的办公环境带来更加亲切自然的舒适感。<br/>' +
+    '深色落地玻璃隔断从空间上分割了公共过道和工作区，<br/>' +
+    '同时可以作为员工小组讨论的写字板。<br/>' +
+    '用餐区和阅读区采用了更明亮的色彩。<br/>' +
+    '高脚椅、餐椅、懒人沙发为员工提供了多种休息和聚会的方式。',
+    location: 'LOCATION： <span font-weight: 600">武汉</span> <br/>' +
+      'YEAR：2019 <br/>' +
+      'PHOTOGRAPHY：ThoughtWorks'
+  },
+  {
+    description:'STUDIO 715为诺特钢琴音乐中心（NOTE PIANO）打造了崭新的艺术教育空间。 <br/>' +
+    '为了体现音乐教育的艺术特质，<br/>' +
+    'STUDIO715采用了曲线、弧形、拱门作为设计语言贯穿整个空间，<br/>' +
+    '打造如音乐旋律般柔和优雅的氛围，<br/>' +
+    '为小学员们提供一个充满梦幻气息的场景。同时，<br/>' +
+    '也期望以美学空间的角度帮助小朋友们从小建立良好的审美认知。<br/>' +
+    '灰色花纹大理石前台中镶嵌发光灯箱，如同点亮的两枚钢琴琴键。<br/>' +
+    '演奏中心的波纹不锈钢顶面倒映出波光粼粼的灯光效果，<br/>' +
+    '月球灯悬浮在主钢琴上方，使演奏者成为舞台的聚焦点。<br/>' +
+    '金色拱门衔接每一个不同的场景，仿佛在童话故事中穿梭而行。',
+    location: 'LOCATION： <span font-weight: 600">青岛 - 新城吾悦广场</span> <br/>' +
+      'YEAR：2019 <br/>' +
+      'PHOTOGRAPHY：NOTE PIANO'
+  },
+  {
+    description:'STUDIO 715为诺特钢琴音乐中心（NOTE PIANO）打造了崭新的艺术教育空间。 <br/>' +
+    '为了体现音乐教育的艺术特质，<br/>' +
+    'STUDIO715采用了曲线、弧形、拱门作为设计语言贯穿整个空间，<br/>' +
+    '打造如音乐旋律般柔和优雅的氛围，<br/>' +
+    '为小学员们提供一个充满梦幻气息的场景。同时，<br/>' +
+    '也期望以美学空间的角度帮助小朋友们从小建立良好的审美认知。<br/>' +
+    '灰色花纹大理石前台中镶嵌发光灯箱，如同点亮的两枚钢琴琴键。<br/>' +
+    '演奏中心的波纹不锈钢顶面倒映出波光粼粼的灯光效果，<br/>' +
+    '月球灯悬浮在主钢琴上方，使演奏者成为舞台的聚焦点。<br/>' +
+    '金色拱门衔接每一个不同的场景，仿佛在童话故事中穿梭而行。',
+    location: 'LOCATION： <span font-weight: 600">青岛 - 保利广场</span> <br/>' +
+    'YEAR：2019 <br/>' +
+    'PHOTOGRAPHY：NOTE PIANO'
+  },
+  {
+    description:'STUDIO 715为POISON潮牌买手店设计了崭新前卫的零售空间。 <br/>' +
+    '空间中高纯度的蓝色灵感来源于法国艺术家Yves Klein，<br/>' +
+    '波普艺术最重要的代表人物之一，特立独行的艺术先驱。<br/>' +
+    '著名的克莱因蓝IKB以他命名。<br/>' +
+    'Yves Klein相信，只有最单纯的色彩才能唤起最强烈的心灵感受力。<br/>' +
+    '我们使这种极致纯净的蓝色与银色锡纸墙面的金属光泽相互呼应，<br/>' +
+    '来创造一种极具科幻魅力的未来空间。<br/>' +
+    '时尚与艺术之间的相互影响，也是我们对艺术先行者的致敬。',
+    location: 'LOCATION： <span font-weight: 600">缅甸</span> <br/>' +
+      'YEAR：2019 <br/>' +
+      'PHOTOGRAPHY：POISON'
+  },
 ]
 export default {
   data() {
@@ -208,8 +268,8 @@ export default {
       width: 370px;
     }
     div:nth-last-child(1){
-      margin-left: 55px;
-      width: 175px;
+      margin-left: 47px;
+      width: 183px;
       text-align: center;
       font-family: AvenirNext-Medium;
     }
