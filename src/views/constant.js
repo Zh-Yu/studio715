@@ -1,6 +1,9 @@
-
 export const desc = [
   {
+    folder: 0,
+    sort: 5,
+    title: 'I LOVE PRETTY',
+    sub_title: 'RETAIL',
     description: 'STUDIO 715设计工作室为ILOVEPRETTY设计了全新的店铺空间，<br/>' +
       '以大胆前卫的色彩和空间语言来重新诠释ILOVEPRETTY的时尚魅力。<br/>' +
       '受著名意大利画家Giorgio De Chirico画作的影响，<br/>' +
@@ -14,6 +17,10 @@ export const desc = [
       'PHOTOGRAPHY：STUDIO 715'
   },
   {
+    folder: 1,
+    sort: 6,
+    title: 'ThoughtWorks BEIJING',
+    sub_title: 'OFFICE',
     description: 'STUDIO 715设计工作室为ThoughtWorks思特沃克·北京设计了全新办公体验的办公空间，<br/>' +
       '用设计语言更好的诠释了ThoughtWorks本身的企业文化。<br/>' +
       'ThoughtWorks鼓励员工之间的沟通交流，活跃的分享，希望拥有一个相对开放、平等、自由的办公环境。<br/>' +
@@ -25,6 +32,10 @@ export const desc = [
       'PHOTOGRAPHY：STUDIO 715 <br/>'
   },
   {
+    folder: 2,
+    sort: 7,
+    title: 'WF+ SHOE STORE',
+    sub_title: 'RETAIL',
     description: 'WF+鞋履配饰集合店 (World Footwear Plus)是一家<br/>' +
       '以意大利手工皮鞋品牌以及高端私人定制为主，<br/>' +
       '融合了时尚服饰、配饰的生活体验馆。<br/>' +
@@ -36,6 +47,10 @@ export const desc = [
       'PHOTOGRAPHY：STUDIO 715'
   },
   {
+    folder: 3,
+    sort: 8,
+    title: 'WF+ SHOWROOM',
+    sub_title: 'RETAIL',
     description: 'STUDIO 715为鞋履配饰品牌集合店 WF+ （World Footwear Plus）展厅设计了全新的陈列展示。<br/>' +
       '整体陈列风格以现代感极强的几何色块为主，<br/>' +
       '搭配家具简洁流畅的线条，搭建出几种色彩主题的陈列背景。<br/>' +
@@ -47,6 +62,10 @@ export const desc = [
       'PHOTOGRAPHY：STUDIO 715'
   },
   {
+    folder: 4,
+    sort: 9,
+    title: 'JEAN-LOUIS SCHERRER',
+    sub_title: 'RETAIL',
     description:'法国品牌让·路易·雪莱Jean-Louis Scherrer诞生于1962年， <br/>' +
     '是一家集时装、配饰、香水等一体的高级品牌。<br/>' +
     '为体现其年轻、时尚、优雅、高级的服装品质，我们采用了<br/>' +
@@ -58,6 +77,10 @@ export const desc = [
       'PHOTOGRAPHY：STUDIO 715'
   },
   {
+    folder: 5,
+    sort: 2,
+    title: 'ThoughtWorks WUHAN',
+    sub_title: 'RETAIL',
     description:'STUDIO 715为ThoughtWorks思特沃克·武汉设计了崭新的办公空间。 <br/>' +
     '不同于传统的办公空间，<br/>' +
     '我们在办公室中创造了一个又一个“交汇点”——In-between Space。<br/>' +
@@ -75,6 +98,10 @@ export const desc = [
       'PHOTOGRAPHY：ThoughtWorks'
   },
   {
+    folder: 6,
+    sort: 3,
+    title: 'NOTE PIANO｜HUANGDAO',
+    sub_title: 'MUSIC CENTRE',
     description:'STUDIO 715为诺特钢琴音乐中心（NOTE PIANO）打造了崭新的艺术教育空间。 <br/>' +
     '为了体现音乐教育的艺术特质，<br/>' +
     'STUDIO715采用了曲线、弧形、拱门作为设计语言贯穿整个空间，<br/>' +
@@ -90,6 +117,10 @@ export const desc = [
       'PHOTOGRAPHY：NOTE PIANO'
   },
   {
+    folder: 7,
+    sort: 4,
+    title: 'NOTE PIANO｜HUANGDAO',
+    sub_title: 'MUSIC CENTRE',
     description:'STUDIO 715为诺特钢琴音乐中心（NOTE PIANO）打造了崭新的艺术教育空间。 <br/>' +
     '为了体现音乐教育的艺术特质，<br/>' +
     'STUDIO715采用了曲线、弧形、拱门作为设计语言贯穿整个空间，<br/>' +
@@ -105,6 +136,10 @@ export const desc = [
     'PHOTOGRAPHY：NOTE PIANO'
   },
   {
+    folder: 8,
+    sort: 1,
+    title: 'POISON BUYER’S STORE',
+    sub_title: 'RETAIL',
     description:'STUDIO 715为POISON潮牌买手店设计了崭新前卫的零售空间。 <br/>' +
     '空间中高纯度的蓝色灵感来源于法国艺术家Yves Klein，<br/>' +
     '波普艺术最重要的代表人物之一，特立独行的艺术先驱。<br/>' +
@@ -117,7 +152,9 @@ export const desc = [
       'YEAR：2019 <br/>' +
       'PHOTOGRAPHY：POISON'
   },
-]
+].sort((a, b) => a.sort - b.sort);
+
+export const homepage_carousel_project_ids = [8, 6, 7, 0, 1];
 
 const pathRegExp = /(\d+)\/(\d+)\.(jpg|png)$/;
 const imageContext = require.context('../assets/', true, /(\d+)\/(\d+)\.(jpg|png)$/);
@@ -127,3 +164,11 @@ export const images = imageContext.keys().reduce((obj, path) => {
   obj[projectId] = (obj[projectId] || []).concat(imageContext(path));
   return obj;
 }, {});
+
+const mainPathRegExp = /(\d+)\/main\.(jpg|png)$/;
+const mainImageContext = require.context('../assets/', true, /(\d+)\/main\.(jpg|png)$/);
+mainImageContext.keys().forEach(path => {
+  const result = path.match(mainPathRegExp);
+  const projectId = result[1];
+  desc.find(it => it.folder === +projectId).img = mainImageContext(path);
+});

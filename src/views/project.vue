@@ -84,8 +84,9 @@ export default {
   },
   created () {
     const projectId = +this.$route.query.index
-    this.description = desc[projectId].description
-    this.location = desc[projectId].location    
+    const projectDesc = desc.find(it => it.folder === +projectId);
+    this.description = projectDesc.description
+    this.location = projectDesc.location    
     this.imgs = images[+projectId]
     this.activeImg = this.imgs[0]
   }

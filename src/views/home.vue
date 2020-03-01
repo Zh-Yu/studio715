@@ -2,8 +2,8 @@
   <div class="home">
     <div class="carousel">
       <el-carousel :interval="2000" indicator-position="none" arrow="never">
-        <el-carousel-item v-for="(item, index) in imgArray" :key="item">
-          <img :src="item" @click="toProject(index)"/>
+        <el-carousel-item v-for="item in imgArray" :key="item.folder">
+          <img :src="item.img" @click="toProject(item.folder)"/>
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -16,21 +16,20 @@
 </template>
 
 <script>
-import img1 from '../assets/main_img1.png'
-import img2 from '../assets/main_img2.png'
-import img3 from '../assets/main_img3.png'
-  export default {
-    data () {
-      return {
-        imgArray: [img1, img2, img3]
-      }
-    },
-    methods: {
-      toProject(index) {
-        this.$router.push('/project?index=' + index)
-      }
+import { desc, homepage_carousel_project_ids } from './constant';
+
+export default {
+  data () {
+    return {
+      imgArray: homepage_carousel_project_ids.map(i => desc.find(it => it.folder === i))
+    }
+  },
+  methods: {
+    toProject(index) {
+      this.$router.push('/project?index=' + index)
     }
   }
+}
 </script>
 <style scoped>
 .home{
