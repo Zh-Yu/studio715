@@ -1,23 +1,21 @@
 <template>
 <div class="project">
-  <div class="project_img">
-    <div class="project_detail">
-      <img class="activeImg" :src="activeImg" v-show="activeImg">
-      <div class="carouselContainer">
-        <div class="leftBtn" @click="pre">
-          <img src="../assets/left.png">
-        </div>
-        <div class="imgs" ref="imgs">
-          <img 
-            :src="item"
-            :class="{'activeItem': index === activeIndex}"
-            v-for="(item, index) in imgs"
-            @click="clickItem(index)"
-            ref="img">
-        </div>
-        <div class="rightBtn" @click="next">
-          <img src="../assets/right.png">
-        </div>
+  <img class="activeImg" :src="activeImg" v-show="activeImg">
+  <div class="project_detail">
+    <div class="carouselContainer">
+      <div class="leftBtn" @click="pre">
+        <img src="../assets/left.png">
+      </div>
+      <div class="imgs" ref="imgs">
+        <img 
+          :src="item"
+          :class="{'activeItem': index === activeIndex}"
+          v-for="(item, index) in imgs"
+          @click="clickItem(index)"
+          ref="img">
+      </div>
+      <div class="rightBtn" @click="next">
+        <img src="../assets/right.png">
       </div>
     </div>
   </div>
@@ -147,73 +145,69 @@ export default {
     }
   }
 }
-.project_img{
+@keyframes activeCss {
+  0% {opacity: 0;}
+  40% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+.activeImg {
+  height: 398px;
+  max-width: 70%;
+  animation-name: activeCss;
+  animation-duration: 0.5s;
+}
+.project_detail {
   width: 600px;
   margin: 0 auto;
-  .project_detail {
+  .carouselContainer {
+    position: relative;
     width: 100%;
-    margin: 0 auto;
-    @keyframes activeCss {
-      0% {opacity: 0;}
-      40% {opacity: 0.5;}
-      100% {opacity: 1;}
-    }
-    .activeImg {
-      height: 398px;
-      max-width: 100%;
-      animation-name: activeCss;
-      animation-duration: 0.5s;
-    }
-    .carouselContainer {
-      position: relative;
-      width: 100%;
-      height: 140px;
-      margin-top: 25px;
-      .leftBtn, .rightBtn {
-        position: absolute;
-        top: 50px;
-        width: 30px;
-        height: 30px;
-        z-index: 99;
-        img{
-          width: 100%;
-          height: 100%;
-        }
-      }
-      .leftBtn {
-        left: 10px;
-      }
-      .rightBtn {
-        right: 10px;
-      }
-      .imgs {
+    height: 140px;
+    margin-top: 25px;
+    .leftBtn, .rightBtn {
+      position: absolute;
+      top: 50px;
+      width: 30px;
+      height: 30px;
+      z-index: 99;
+      img{
         width: 100%;
-        height: 160px; // 留给滚动条
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        img {
-          height: 100%;
-          margin-right: 5px;
-          flex-shrink: 0;
-          position: relative;
-          display: inline-block;
-          height: 140px;
-          opacity: 0.5;
-        }
-        img:nth-last-child(1) {
-          margin-right: 0;
-        }
-        .activeItem {
-          opacity: 1;
-        }
+        height: 100%;
       }
-      .imgs::-webkit-scrollbar {
-        width: 0 !important;
+    }
+    .leftBtn {
+      left: 10px;
+    }
+    .rightBtn {
+      right: 10px;
+    }
+    .imgs {
+      width: 100%;
+      height: 160px; // 留给滚动条
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      img {
+        height: 100%;
+        margin-right: 5px;
+        flex-shrink: 0;
+        position: relative;
+        display: inline-block;
+        height: 140px;
+        opacity: 0.5;
       }
-      .imgs {
-        -ms-overflow-style: none
+      img:nth-last-child(1) {
+        margin-right: 0;
       }
+      .activeItem {
+        opacity: 1;
+      }
+    }
+    .imgs::-webkit-scrollbar {
+      width: 0 !important;
+    }
+    .imgs {
+      -ms-overflow-style: none
     }
   }
 }

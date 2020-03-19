@@ -100,7 +100,7 @@ export const desc = [
   {
     folder: 6,
     sort: 3,
-    title: 'NOTE PIANO｜HUANGDAO',
+    title: 'NOTE PIANO｜QINGDAO',
     sub_title: 'MUSIC CENTRE',
     description:'STUDIO 715为诺特钢琴音乐中心（NOTE PIANO）打造了崭新的艺术教育空间。 <br/>' +
     '为了体现音乐教育的艺术特质，<br/>' +
@@ -119,7 +119,7 @@ export const desc = [
   {
     folder: 7,
     sort: 4,
-    title: 'NOTE PIANO｜HUANGDAO',
+    title: 'NOTE PIANO｜QINGDAO',
     sub_title: 'MUSIC CENTRE',
     description:'STUDIO 715为诺特钢琴音乐中心（NOTE PIANO）打造了崭新的艺术教育空间。 <br/>' +
     '为了体现音乐教育的艺术特质，<br/>' +
